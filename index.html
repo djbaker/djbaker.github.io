@@ -1,0 +1,113 @@
+<!doctype html>
+
+<html>
+    
+    <head>
+        <title>Daniel's super ok basic practice website</title>
+        <style>
+            body {
+                background: rgb(150, 205, 120);
+                color: rgb(45, 45, 45);
+                padding: 10px;
+                font-family: arial;
+            }
+            header {
+                font-size: 2em;
+                font-weight: bold;
+            }
+            [id=all-contents] {
+                max-width: 1200px;
+                margin: left;
+            }
+            [id=main] {
+                font-size: 2em;
+                font-weight: bold;
+            }
+            [id=secondary] {
+                font-size: 1.5em;
+            }
+
+            /* navigation menu */
+            nav {
+                background: rgb(125, 50, 250);
+                margin: 0 auto;
+                margin-bottom: 20px;
+                display: flex;
+                padding: 10px;
+                border-radius: 0px 0px 25px 25px;
+            }
+            nav header {
+                display: flex;
+                align-items: center;
+                color: rgb(255, 255, 255);
+                flex: 1;
+            }
+            nav ul {
+                list-style-image: none;
+            }
+            nav li {
+                display: inline-block;
+                padding: 0 10px;
+            }
+            nav a {
+                text-decoration: none;
+                color: #fff;
+            }
+
+            /* main container area beneath menu */
+            main {
+                background: rgb(245, 238, 219);
+                display: flex;
+            }
+            [class=sidebar] {
+                margin-right: 25px;
+                padding: 10px;
+            }
+            [class=sidebar] img {
+                width: 200px;
+            }
+            [class=content] {
+                flex: 1;
+                padding: 15px;
+            }
+            [class=interests] header {
+                font-size: 1.25em;
+            }
+        </style>
+    </head>
+    
+    
+    <body>
+        <div id="all-contents">
+            <nav>
+                <header id="main">Daniel's super ok basic practice website</header>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="portfolio.html">Portfolio</a></li>
+                </ul>
+            </nav>
+            
+            
+            <main>
+                <div class="sidebar">
+                    <img src="https://scontent-dft4-1.xx.fbcdn.net/v/t1.0-9/11855725_10204899233542314_7833579405059889388_n.jpg?oh=2db6a49a33f1f2bc2a514bfc524f6d0d&oe=591EAC14">
+                </div>
+                
+                <div class="content">
+                    <header>Daniel Baker</header>
+                    <p>Daniel is a software support technician at mumms software, has a degree in biology and is ready to learn, or w/e</p>
+                    <header id="secondary">Interests</header>
+                    <ul>
+                        <li>Reading</li>
+                        <li>biking</li>
+                        <li>other thangs</li>
+                    </ul>
+                </div>
+            </main>
+        </div>
+    </body>
+    
+    
+    
+    
+</html>
