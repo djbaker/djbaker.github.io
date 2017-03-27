@@ -1,11 +1,4 @@
-<!doctype html>
-
-<html>
-    <head>
-        <title>Daniel's super ok basic practice website</title>
-        <link rel="icon" href="icons/cool_stuff.ico" />
-        <style>
-            body {
+body {
                 background: rgb(150, 205, 120);
                 color: rgb(45, 45, 45);
                 padding: 10px;
@@ -16,7 +9,7 @@
                 font-weight: bold;
             }
             [id=all-contents] {
-                max-width: 1200px;
+                max-width: 1000px;
                 margin: left;
             }
             [id=main] {
@@ -73,42 +66,3 @@
             [class=interests] header {
                 font-size: 1.25em;
             }
-        </style>
-    </head>
-    
-    
-    <body>
-        <div id="all-contents">
-            <nav>
-                <header id="main">Daniel's super ok basic practice website</header>
-                <ul>
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="portfolio.html">Portfolio</a></li>
-                    <li><a href="studies.html">Studies</a></li>
-                </ul>
-            </nav>
-            
-            
-            <main>
-                <div class="sidebar">
-                    <img src="https://scontent-dft4-1.xx.fbcdn.net/v/t1.0-9/11855725_10204899233542314_7833579405059889388_n.jpg?oh=2db6a49a33f1f2bc2a514bfc524f6d0d&oe=591EAC14">
-                </div>
-                
-                <div class="content">
-                    <header>Daniel Baker</header>
-                    <p>Daniel is a software support technician at mumms software, has a degree in biology and is ready to learn, or w/e</p>
-                    <header id="secondary">Interests</header>
-                    <ul>
-                        <li>Reading</li>
-                        <li>biking</li>
-                        <li>other thangs</li>
-                    </ul>
-                </div>
-            </main>
-        </div>
-    </body>
-    
-    
-    
-    
-</html>
