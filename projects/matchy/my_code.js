@@ -32,13 +32,25 @@ var cat = {
     noises: ['meow', 'purr', 'screech','hiss']
 }
 
+var fishy = {
+    species: 'goldfish',
+    name: 'goldie',
+    noises: ['silence', 'nada', 'whisper', 'no noises']
+}
+
+animals.push(cat);
+animals.push(fishy);
+
 var friends = [];
 // We picked an array because we can make an ordered list of friends that we can loop over
 function randomM() {
-let index = Math.floor(Math.random() * animals.length - 1);
+let index = Math.floor(Math.random() * animals.length);
 return animals[index];
 }
 
 friends.push(randomM()["name"]);
 
 console.log(friends)
+
+animals[0].friends = friends;
+console.log(animals)
