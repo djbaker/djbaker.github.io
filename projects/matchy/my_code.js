@@ -71,3 +71,11 @@ function edit (name, object) {
         }
     }
 }
+
+function remove(name) {
+    for (var i = 0; i < animals.length; i++) {
+        if (animals[i]["name"] === name) {
+            animals.splice(i, 1)
+        }
+    }
+}
