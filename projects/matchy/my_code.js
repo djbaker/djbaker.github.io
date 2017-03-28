@@ -79,3 +79,13 @@ function remove(name) {
         }
     }
 }
+
+function create(object) {
+    if (object["name"].length > 0 && object["species"].length > 0) {
+        for (var i = 0; i < animals.length; i++) {
+            if (animals[i]["name"] === object["name"])
+            return;
+        }
+        animals.push(object);
+    }
+}
