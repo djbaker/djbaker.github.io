@@ -53,4 +53,13 @@ friends.push(randomM()["name"]);
 console.log(friends)
 
 animals[0].friends = friends;
-console.log(animals)
+console.log(animals);
+
+function search (name) {
+    for (var i = 0; i < animals.length; i++) {
+        if (animals[i]["name"] === name) {
+            return animals[i];
+        }
+    }
+return null;
+}
