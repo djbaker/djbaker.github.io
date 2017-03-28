@@ -63,3 +63,11 @@ function search (name) {
     }
 return null;
 }
+
+function edit (name, object) {
+    for (var i = 0; i < animals.length; i++) {
+        if (animals[i]["name"] === name) {
+            animals.splice(i, 1, object);
+        }
+    }
+}
