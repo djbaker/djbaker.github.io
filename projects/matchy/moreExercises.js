@@ -45,9 +45,15 @@ var data = { results: [
 
   // Use the .length property to console.log the length of the results
   // array.
+  console.log(results.length);
 
   // Imagine you want are making a search results page,
   // (console.log) all of the animal names in order.
+var names = [];
+for (var i = 0; i < results.length; i++) {
+  names.push(results[i]["name"]);
+}
+console.log(names.join(" "));
 
   // Next, Capitalize the first letter of each name and put a label
   // Your end result should look like this:
