@@ -15,12 +15,20 @@ function keysToString(object) {
     return arr.join(" ");
 }
 
-
-
 function valuesToString(object) {
     var arr = [];
     for (var key in object) {
         arr.push(object[key]);
     }
     return arr.join(" ");
+}
+
+function arrayOrObject(argumentttt) {
+    if (argumentttt.typeof === "object") {
+        if (Array.isArray(object)) {
+            return "array"
+        } else {
+            return "object"
+        }
+    }
 }

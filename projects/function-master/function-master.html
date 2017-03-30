@@ -20,20 +20,20 @@
     // STUDENTS, DO NOT EDIT THIS!!!
     // Do your work in function-master.js
 
-    /* global objectValues */
-    QUnit.test( "objectValues() : Should take an object and return its values in an array", function( assert ) {
+//done    /* global objectValues */
+   QUnit.test( "objectValues() : Should take an object and return its values in an array", function( assert ) {
       var data = {a: "one", b: "two", ponies: "crayons", dingle: "dangle"};
 
       assert.deepEqual( objectValues(data), ["one","two","crayons","dangle"]);
     });
 
-    /* global keysToString */
+//done    /* global keysToString */
     QUnit.test("keysToString() : Should take an object and return all its keys in a string each separated with a space", function(assert){
       var data = {a: "one", b: "two", ponies: "crayons", dingle: "dangle"};
       assert.equal(keysToString(data), "a b ponies dingle");
     });
 
-    /* global valuesToString */
+//done    /* global valuesToString */
     QUnit.test("valuesToString() : Should take an object and return all its string values in a string each separated with a space", function(assert){
       var data = {a: "one", boolean: false, b: "two", ponies: "crayons", something: {}, dingle: "dangle"};
       assert.equal(valuesToString(data), "one two crayons dangle");
