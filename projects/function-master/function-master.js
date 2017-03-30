@@ -25,7 +25,7 @@ function valuesToString(object) {
 
 function arrayOrObject(argumentttt) {
     if (argumentttt.typeof === "object") {
-        if (Array.isArray(object)) {
+        if (Array.isArray(argumentttt)) {
             return "array"
         } else {
             return "object"
