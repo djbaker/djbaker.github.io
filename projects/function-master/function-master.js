@@ -81,28 +81,46 @@ function addFriend(name, object) {
     return object;
 }
 
+
 function isFriend(name, object) {
-    for (var i = 0; object.friends.length; i++) {
-        if (object.friends[i] === name ) {
-            return true;
+    if (Array.isArray(object.friends)) {
+        for (var i = 0; i < object.friends.length; i++) {
+            if (object.friends[i] === name) {
+                return true;
+            }
         }
     }return false;
 }
 
-/*
 function nonFriends(name, list) {
+    var arr = [];
+    for (var i = 0; i < list.length; i++){
+        if (list[i].name !== name) {
+            if (!isFriend(name, list[i])) {
+                arr.push(list[i].name);
+            }
+        }
+    }return arr;
+}
 
-for (var i = 0; list.length; i++) {
-    if (list[i].name !== name) {
-        if (list[i].friends) {
+function updateObject(object, key, value) {
+    object[key] = value;
+    return object;
+}
+
+function removeProperties(object, array) {
+    for (var i = 0; i < array.length; i++) {
+        if (object.hasOwnProperty(array[i])) {
+            delete object[array[i]];
+        }
     }
 }
 
-*/
-
-/*    for (var i = 0; list.length; i++) {
-        for (var i2 = 0; list[i].friends.length; i2++) {
-            if ()
+function dedup(array) {
+    var arr = [];
+    for (var i = 0; i < array.length; i++) {
+        if (arr.indexOf(array[i]) === -1) {
+            arr.push(array[i]);
         }
-    }
-*/
+    }return arr;
+}
