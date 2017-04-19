@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <script src="bower_components/jquery/dist/jquery.min.js"></script>
+    <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="css/custom.css" type="text/css" />
+    <script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="bower_components/notes/notes.js"></script>
+    <title>A Well of HTML</title>
+    <style type="text/css">
+        
+    </style>
+</head>
+
+<body>
+    <div id="container" class="container">
+        <!-- ALL YOUR MARKUP GOES BELOW HERE -->
+        <div class='headings'>
+            <a href="https://en.wikipedia.org/wiki/Gmina_Broch%C3%B3w">Random article on gmina broch</a>
+            <img src="img/apple-in-grass.jpg" />
+            <h1>Heading 1</h1>
+            <h2>Heading 2</h2>
+            <h3>Heading 3</h3>
+            <h4>Heading 4</h4>
+            <h5>Heading 5</h5>
+            <h6>Heading 6 <small>With some fine print</small></h6>
+        </div>
+        <div class="flex-row">
+            <div class='paragraphs'>
+                <p>This is some example text, yay yay</p>
+                
+                <p><b>Bold</b><i>Italics</i><em>Emphesis</em><strong>Strong</strong></p>
+                
+                <p>Gmina Brochów is a rural gmina (administrative district) in Sochaczew County, Masovian Voivodeship, in east-central Poland. Its seat is the village of Brochów, which lies approximately 11 kilometres (7 mi) north of Sochaczew and 52 km (32 mi) west of Warsaw.
+                The gmina covers an area of 116.76 square kilometres (45.1 sq mi), and as of 2006 its total population is 4,258.</p>
+            
+            
+            
+                <ul>
+                    <li>first</li>
+                    <li>Second</li>
+                    <li>Fourth?</li>
+                </ul>
+                
+                <ol>
+                    <li>First ordered</li>
+                    <li>Second ordered</li>
+                    <li>Third ordered</li>
+                </ol>
+            </div>    
+            <div class='everything-else'>   
+                <form class="form">
+                    <div>
+                        <label for="msg">Software problem:</label>
+                        <textarea id="msg">Please include as many details as you can about your problem, what did you click on, what did you expect to happen, what happened?</textarea>
+                    </div>
+                    <div>
+                        <label for="name">Name:</label>
+                        <input type="text" id="name" />
+                    </div>
+                    <div>
+                        <label for="mail">E-mail:</label>
+                        <input type="email" id="mail" />
+                    </div>
+                    <div>
+                        <label for="phone">Phone:</label>
+                        <input type="phone" id="phone" />
+                    </div>
+                    <div class="button">
+                        <button type="submit">Submit your ticket</button>
+                    </div>
+                </form>
+                
+                <table>
+                    <thead>
+                        <tr>
+                            <td colspan="2">Some current Saints Players</td>
+                        </tr>
+                        <tr>
+                            <th><i>Name</i></th>
+                            <th>Position</th>
+                        </tr>
+                    </thead>
+
+                    <tbody>
+                        <tr>
+                            <td>Roman Harper</td>
+                            <td>Safety</td>
+                        </tr>
+                        <tr>
+                            <td>Jack Allen</td>
+                            <td>Center</td>
+                        </tr>
+                        <tr>
+                            <td>Tony Hills</td>
+                            <td>Tackle</td>
+                        </tr>
+                        <tr>
+                            <td>Darryl Tapp</td>
+                            <td>Defensive End</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+        
+        
+        <div class="grid">
+          <div class="row">
+              <div class="col-md-2"><img src="img/cherries.jpg" class="row-img"></img>
+              </div>
+              <div class="col-md-5">Cherries</div>
+          </div>
+          <div class="row">
+              <div class="col-md-2"><img src="img/black-currant.jpg" class="row-img"></img>
+              </div>
+              <div class="col-md-5">What the hell are black currants?</div>
+          </div>
+          <div class="row">
+              <div class="col-md-2"><img src="img/apple-in-grass.jpg" class="row-img"></img>
+              </div>
+              <div class="col-md-5">Keep those dentists away.</div>
+          </div>
+        </div>
+        
+        <!-- ALL YOUR MARKUP GOES ABOVE HERE -->
+    </div>
+    <script>
+        $(function () {
+            window.opspark.notes.show();
+        });
+    </script>
+</body>
+
+</html>
